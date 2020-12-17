@@ -1,13 +1,13 @@
-name: "Build action: Foxy + Rolling"
+name: "Build action: Eloquent"
 
 on:
   push:
-    branches: [ dashing ]
+    branches: [ eloquent ]
   pull_request:
-    branches: [ dashing ]
+    branches: [ eloquent ]
   schedule:
     # Run once per day to detect broken dependencies.
-    - cron: '17 5 * * *'
+    - cron: '17 7 * * *'
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ ubuntu-18.04 ]
-        ros_distribution: [ dashing ]
+        ros_distribution: [ eloquent ]
     steps:
     - uses: actions/checkout@v2
     - uses: ros-tooling/setup-ros@0.0.26
