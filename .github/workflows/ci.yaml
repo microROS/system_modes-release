@@ -1,13 +1,13 @@
-name: "Build action: Eloquent"
+name: "Build action: Foxy + Rolling"
 
 on:
   push:
-    branches: [ eloquent ]
+    branches: [ master, dev ]
   pull_request:
-    branches: [ eloquent ]
+    branches: [ master, dev ]
   schedule:
     # Run once per day to detect broken dependencies.
-    - cron: '17 7 * * *'
+    - cron: '17 6 * * *'
 
 jobs:
   build:
@@ -15,8 +15,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-18.04 ]
-        ros_distribution: [ eloquent ]
+        os: [ ubuntu-20.04 ]
+        ros_distribution: [ foxy, rolling ]
     steps:
     - uses: actions/checkout@v2
     - uses: ros-tooling/setup-ros@0.0.26
@@ -31,4 +31,3 @@ jobs:
     - uses: codecov/codecov-action@v1
       with:
         file: ros_ws/lcov/total_coverage.info
-
