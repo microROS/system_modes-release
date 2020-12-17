@@ -2,6 +2,11 @@
 Changelog for package system_modes_examples
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.4.2 (2020-12-17)
+-----------
+* Error handling and rules feature no longer experimental
+* Fixed bugs in monitor and tests
+
 0.4.1 (2020-10-29)
 -----------
 * Include experimental error handling and rules feature
@@ -10,6 +15,12 @@ Changelog for package system_modes_examples
 
 0.4.0 (2020-09-30)
 -----------
+* publish inferred state and mode transitions
+* https://github.com/micro-ROS/system_modes/issues/42
+
+0.4.0 (2020-09-30)
+-----------
+* mode event now including start and goal mode
 * publish inferred state and mode transitions
 * https://github.com/micro-ROS/system_modes/issues/42
 
