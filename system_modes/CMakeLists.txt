@@ -178,32 +178,6 @@ if(BUILD_TESTING)
     )
     target_link_libraries(test_mode_monitor mode)
   endif()
-
-  # Launch Tests
-  find_package(launch_testing_ament_cmake REQUIRED)
-  set(launch_tests
-    "two_lifecycle_nodes"           # Mode Manager with Lifecycle Nodes
-    "two_mixed_nodes"               # Mode Manager with Lifecycle and non-Lifecycle Nodes
-    "two_independent_hierarchies"   # Mode Manager for two independent hierarchies of nodes
-    "manager_and_monitor")          # Mode Manager and Mode Monitor
-
-  # Launch Test: Mode Manager with Lifecycle Nodes
-  foreach(test_name ${launch_tests})
-    file(TO_CMAKE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/test/launchtest/${test_name}.py" TEST_NODES)
-    file(TO_CMAKE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/test/launchtest/${test_name}_modes.yaml" MODELFILE)
-    file(TO_CMAKE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/test/launchtest/${test_name}_expected_output" EXPECTED_OUTPUT)
-    configure_file(
-        "test/launchtest/${test_name}.launch.py.in"
-        "test/${test_name}.launch.py"
-        @ONLY
-      )
-    add_launch_test(
-      "${CMAKE_CURRENT_BINARY_DIR}/test/${test_name}.launch.py"
-      TARGET "${test_name}"
-      TIMEOUT 30
-      ENV
-    )
-  endforeach()
 endif()
 
 ament_export_include_directories(include)

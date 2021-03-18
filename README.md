@@ -2,10 +2,7 @@
 
 [![License](https://img.shields.io/badge/License-Apache%202-blue.svg)](https://github.com/micro-ROS/system_modes/blob/master/LICENSE)
 [![Build status](https://build.ros2.org/job/Ddev__system_modes__ubuntu_bionic_amd64/badge/icon?subject=Build%20farm%3A%20Dashing)](https://build.ros2.org/job/Ddev__system_modes__ubuntu_bionic_amd64/)
-[![Build status](http://build.ros2.org/job/Edev__system_modes__ubuntu_bionic_amd64/badge/icon?subject=Build%20farm%3A%20Eloquent)](http://build.ros2.org/job/Edev__system_modes__ubuntu_bionic_amd64/)
-[![Build status](http://build.ros2.org/job/Fdev__system_modes__ubuntu_focal_amd64/badge/icon?subject=Build%20farm%3A%20Foxy)](http://build.ros2.org/job/Fdev__system_modes__ubuntu_focal_amd64/)
-[![Build status](http://build.ros2.org/job/Rdev__system_modes__ubuntu_focal_amd64/badge/icon?subject=Build%20farm%3A%20Rolling)](http://build.ros2.org/job/Rdev__system_modes__ubuntu_focal_amd64/)
-[![Build status](https://github.com/micro-ROS/system_modes/workflows/Build%20action%3A%20Foxy%20%2B%20Rolling/badge.svg)](https://github.com/micro-ROS/system_modes/actions)
+[![Build status](https://github.com/micro-ROS/system_modes/workflows/Build%20action%3A%20Dashing/badge.svg)](https://github.com/micro-ROS/system_modes/actions)
 [![Code coverage](https://codecov.io/gh/micro-ROS/system_modes/branch/master/graph/badge.svg)](https://codecov.io/gh/micro-ROS/system_modes)
 
 This repository explores a system modes concept that is implemented for ROS 2 in two packages:
