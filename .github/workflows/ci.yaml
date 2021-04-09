@@ -1,13 +1,13 @@
-name: "Build action: Dashing"
+name: "Build action: Foxy + Rolling"
 
 on:
   push:
-    branches: [ dashing ]
+    branches: [ master, dev ]
   pull_request:
-    branches: [ dashing ]
+    branches: [ master, dev ]
   schedule:
     # Run once per day to detect broken dependencies.
-    - cron: '17 5 * * *'
+    - cron: '17 6 * * *'
 
 jobs:
   build:
@@ -15,11 +15,11 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ ubuntu-18.04 ]
-        ros_distribution: [ dashing ]
+        os: [ ubuntu-20.04 ]
+        ros_distribution: [ foxy, rolling ]
     steps:
     - uses: actions/checkout@v2
-    - uses: ros-tooling/setup-ros@0.1.2
+    - uses: ros-tooling/setup-ros@0.0.26
       with:
         required-ros-distributions: ${{ matrix.ros_distribution }}
     - uses : ros-tooling/action-ros-ci@0.1.0
@@ -32,4 +32,3 @@ jobs:
     - uses: codecov/codecov-action@v1
       with:
         file: ros_ws/lcov/total_coverage.info
-

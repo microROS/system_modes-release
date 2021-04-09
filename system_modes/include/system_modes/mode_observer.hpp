@@ -18,7 +18,6 @@
 
 #include <lifecycle_msgs/msg/transition_event.hpp>
 #include <lifecycle_msgs/srv/get_state.hpp>
-#include <shared_mutex>
 
 #include <map>
 #include <memory>
