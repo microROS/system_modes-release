@@ -1,0 +1,13 @@
+Source: ros-foxy-launch-system-modes
+Section: misc
+Priority: optional
+Maintainer: Arne Nordmann <arne.nordmann@de.bosch.com>
+Build-Depends: debhelper (>= 9.0.0), python3-importlib-metadata, python3-pytest, python3-yaml, ros-foxy-ament-copyright, ros-foxy-ament-flake8, ros-foxy-ament-index-python, ros-foxy-ament-pep257, ros-foxy-launch, ros-foxy-osrf-pycommon, ros-foxy-rclpy, ros-foxy-system-modes-msgs, ros-foxy-ros-workspace, python3-all, python3-setuptools
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-foxy-launch-system-modes
+Architecture: any
+Depends: ${python3:Depends}, ${misc:Depends}, python3-importlib-metadata, python3-yaml, ros-foxy-ament-index-python, ros-foxy-launch, ros-foxy-osrf-pycommon, ros-foxy-rclpy, ros-foxy-system-modes-msgs, ros-foxy-ros-workspace
+Description: System modes specific extensions to the launch tool, i.e.
+ launch actions, events, and event handlers for system modes.
