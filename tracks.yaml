@@ -96,7 +96,7 @@ tracks:
     last_version: 0.9.0
     name: upstream
     patches: null
-    release_inc: '2'
+    release_inc: '3'
     release_repo_url: https://github.com/microROS/system_modes-release.git
     release_tag: :{version}
     ros_distro: foxy
