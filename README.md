@@ -1,3 +1,31 @@
+## system_modes (foxy) - 0.9.0-3
+
+The packages in the `system_modes` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --rosdistro foxy --track foxy system_modes` on `Sun, 05 Jun 2022 10:39:41 -0000`
+
+These packages were released:
+- `launch_system_modes`
+- `system_modes`
+- `system_modes_examples`
+- `system_modes_msgs`
+- `test_launch_system_modes`
+
+Version of package(s) in repository `system_modes`:
+
+- upstream repository: https://github.com/micro-ROS/system_modes.git
+- release repository: https://github.com/microROS/system_modes-release.git
+- rosdistro version: `0.9.0-1`
+- old version: `0.9.0-2`
+- new version: `0.9.0-3`
+
+Versions of tools used:
+
+- bloom version: `0.11.1`
+- catkin_pkg version: `0.5.2`
+- rosdep version: `0.21.0`
+- rosdistro version: `0.8.3`
+- vcstools version: `0.1.42`
+
+
 ## system_modes (foxy) - 0.9.0-2
 
 The packages in the `system_modes` repository were released into the `foxy` distro by running `/usr/bin/bloom-release --rosdistro foxy --track foxy system_modes` on `Sun, 05 Jun 2022 10:37:31 -0000`
